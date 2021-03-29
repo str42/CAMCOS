@@ -59,7 +59,7 @@ scraper2 <- function(x){
     usd1 <- as.numeric(usd[1])
     usd2 <- gsub(pattern = '[()$]', replace ="", usd[3])
     usd2 <- as.numeric(usd2)
-    usd <- usd2/
+    usd <- usd2
     data[i,9] <- usd
     t = t+1  #counter as scripts must rest every 29 transactions.  etherscan 
     #will not allow more than 29 pages to be processed at a time
