@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<eth_high &le; 770.551<br/>gini = 0.542<br/>samples = 152808<br/>value = [82389, 61878, 8541]<br/>class = 2>, fillcolor="#f9e3d2"] ;
+1 [label=<past_median &le; 78.331<br/>gini = 0.373<br/>samples = 89638<br/>value = [68024, 20302, 1312]<br/>class = 2>, fillcolor="#eda877"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<eth_high &le; 549.136<br/>gini = 0.319<br/>samples = 69682<br/>value = [56061, 12838, 783]<br/>class = 2>, fillcolor="#eb9f68"] ;
+1 -> 2 ;
+3 [label=<past_median &le; 61.616<br/>gini = 0.19<br/>samples = 40796<br/>value = [36499, 4031, 266]<br/>class = 2>, fillcolor="#e89050"] ;
+2 -> 3 ;
+4 [label=<eth_high &le; 475.189<br/>gini = 0.166<br/>samples = 33963<br/>value = [30891, 2873, 199]<br/>class = 2>, fillcolor="#e88d4d"] ;
+3 -> 4 ;
+5 [label=<gini = 0.14<br/>samples = 29068<br/>value = [26881, 2014, 173]<br/>class = 2>, fillcolor="#e78b49"] ;
+4 -> 5 ;
+6 [label=<gini = 0.298<br/>samples = 4895<br/>value = [4010, 859, 26]<br/>class = 2>, fillcolor="#eb9d64"] ;
+4 -> 6 ;
+7 [label=<gini = 0.298<br/>samples = 6833<br/>value = [5608, 1158, 67]<br/>class = 2>, fillcolor="#eb9c64"] ;
+3 -> 7 ;
+8 [label=<gini = 0.448<br/>samples = 28886<br/>value = [19562, 8807, 517]<br/>class = 2>, fillcolor="#f1bc95"] ;
+2 -> 8 ;
+9 [label=<gini = 0.5<br/>samples = 19956<br/>value = [11963, 7464, 529]<br/>class = 2>, fillcolor="#f6d2b8"] ;
+1 -> 9 ;
+10 [label=<eth_high &le; 1468.088<br/>gini = 0.502<br/>samples = 63170<br/>value = [14365, 41576, 7229]<br/>class = 3>, fillcolor="#91f1b9"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<past_median &le; 91.882<br/>gini = 0.545<br/>samples = 33009<br/>value = [13444, 17656, 1909]<br/>class = 3>, fillcolor="#d4f9e4"] ;
+10 -> 11 ;
+12 [label=<gini = 0.541<br/>samples = 16150<br/>value = [7618, 7816, 716]<br/>class = 3>, fillcolor="#fafefc"] ;
+11 -> 12 ;
+13 [label=<gini = 0.535<br/>samples = 16859<br/>value = [5826, 9840, 1193]<br/>class = 3>, fillcolor="#b7f6d1"] ;
+11 -> 13 ;
+14 [label=<eth_high &le; 1533.962<br/>gini = 0.339<br/>samples = 30161<br/>value = [921, 23920, 5320]<br/>class = 3>, fillcolor="#6beca1"] ;
+10 -> 14 ;
+15 [label=<gini = 0.16<br/>samples = 2023<br/>value = [101, 1850, 72]<br/>class = 3>, fillcolor="#4be78c"] ;
+14 -> 15 ;
+16 [label=<gini = 0.349<br/>samples = 28138<br/>value = [820, 22070, 5248]<br/>class = 3>, fillcolor="#6deca2"] ;
+14 -> 16 ;
+}
